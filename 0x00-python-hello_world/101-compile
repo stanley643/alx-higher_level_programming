@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+import os
+import py_compile
+
+# Get the name of the Python script file from the PYFILE environment variable
+pyfile = os.environ.get('PYFILE')
+
+# Define the name of the compiled output file
+pycfile = pyfile + 'c'
+
+# Compile the Python script file to bytecode
+py_compile.compile(pyfile, pycfile)
+
+# Print a message indicating that the compilation was successful
+print(f"Compiling {pyfile} ...")
+
