@@ -5,3 +5,5 @@ def print_sorted_dictionary(a_dictionary):
 
     for x,y in output:
         print(x+':', y)
+
+    return output
