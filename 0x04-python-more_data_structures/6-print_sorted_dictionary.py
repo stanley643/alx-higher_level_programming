@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
 def print_sorted_dictionary(a_dictionary):
-    output = sorted(a.dictionary.items())
+    output = sorted(a_dictionary.items())
 
-    return output
+    print(output)
