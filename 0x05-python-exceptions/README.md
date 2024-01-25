@@ -1,1 +1,1 @@
-README coming soon
+README on Python Exeptions coming soon
