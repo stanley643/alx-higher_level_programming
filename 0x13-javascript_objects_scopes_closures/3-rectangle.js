@@ -1,16 +1,22 @@
 #!/usr/bin/node
+class Rectangle {
+    constructor(w, h) {
+        if (w <= 0 || h <= 0) {
+            // If either width or height is not a positive integer, create an empty object
+            return;
+        }
+        this.width = w;
+        this.height = h;
+    }
 
-class Rectangle:
-    def __init__(self, w, h):
-        if w <= 0 or h <= 0:
-            # If either width or height is not a positive integer, create an empty object
-            pass
-        else:
-            self.width = w
-            self.height = h
+    print() {
+        if (!this.width || !this.height) {
+            return; // If width or height is not set, return
+        }
+        for (let i = 0; i < this.height; i++) {
+            console.log("X".repeat(this.width));
+        }
+    }
+}
 
-    def print(self):
-        if hasattr(self, 'width') and hasattr(self, 'height'):
-            for _ in range(self.height):
-                print("X" * self.width)
-
+module.exports = Rectangle;
