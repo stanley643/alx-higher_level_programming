@@ -1,3 +1,3 @@
 #!/bin/bash
-# This scriptrrR 
-curl -s -o /tmp/response.txt -w "%{http_code}" "$1" && cat /tmp/response.txt
+# This script URL
+curl -s -o /dev/null -w "%{http_code}" "$1"
